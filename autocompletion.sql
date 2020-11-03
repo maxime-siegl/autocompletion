@@ -2,7 +2,7 @@
 -- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
--- Hôte : 127.0.0.1:3308
+-- Hôte : 127.0.0.1:3306
 -- Généré le :  lun. 02 nov. 2020 à 16:37
 -- Version du serveur :  8.0.18
 -- Version de PHP :  7.3.12
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `philosophes` (
   `nom` varchar(255) NOT NULL,
   `description` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Déchargement des données de la table `philosophes`
