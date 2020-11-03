@@ -7,7 +7,10 @@
   </head>
   <body>
     <header></header>
-    <main></main>
+    <main>
+      <input type="text" id="philosophes" placeholder="Que recherchez-vous ?">
+
+    </main>
     <footer></footer>
   </body>
 
