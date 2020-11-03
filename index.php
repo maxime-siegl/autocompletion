@@ -7,12 +7,18 @@
   </head>
   <body>
     <header></header>
-    <main>
-      <input type="text" id="philosophes" placeholder="Que recherchez-vous ?">
 
+    <main id="main">
+      <div id="recherche">
+        <input type="text" id="philosophes" placeholder="Que recherchez-vous ?">
+        <button id="search"> Recherche </button>
+      </div>
     </main>
+
+
     <footer></footer>
   </body>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/article.js"></script>
 </html>
