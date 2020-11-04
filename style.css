@@ -1,0 +1,20 @@
+#element_philosophe{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 4%;
+    width: 45%;
+    height: 40vh;
+}
+
+#element_philosophe h2{
+    font-size: 2em;
+}
+
+#element_philosophe p{
+    background-color:rgb(143, 184, 222);
+    border-radius: 15px;
+    text-indent: 20%;
+    line-height: 150%;
+    padding: 4%;
+}
