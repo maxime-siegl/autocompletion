@@ -13,9 +13,9 @@
       <h1>Biographies de philosophes</h1>
     </header>
     <main>
-
-      <input type="text" class="input_index" id="philosophes" placeholder="Que recherchez-vous ?">
-
+      <form class="form_autocomplete" action="recherche.php" method="get">
+        <input type="text" name="search" class="input_index" id="philosophes" placeholder="Que recherchez-vous ?">
+      </form>
     </main>
     <footer>
       <p>Auto-complétion, développé par Maxime Siegl & Cécile Wojnowski</p>
