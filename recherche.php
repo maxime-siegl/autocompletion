@@ -1,3 +1,16 @@
+<?php
+include("includes/db.php");
+// Afficher les résultats de recherche provenant du formulaire de l'index
+if(isset($_GET['search'])){
+
+  $search = $_GET['search'];
+
+  $query = $db->query("SELECT * FROM philosophes WHERE nom LIKE '$search%'");
+  ?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
@@ -7,18 +20,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="header_index">
-      <h1>Biographies de philosophes</h1>
+    <header>
+
     </header>
-    <main class="main_index">
-      <form class="form_autocomplete" action="recherche.php" method="get">
-        <input type="text" name="search" class="input_index" id="philosophes" placeholder="Que recherchez-vous ?">
-      </form>
+    <main class="main_recherche">
+      <?php
+       while ($donnees = $query->fetch()){ ?>
+         <article>
+           <h2> <?php echo $donnees['nom']; ?> </h2>
+           <p> <?php echo substr($donnees['description'], 0, 200) . "... <br>" ; ?>
+           <?php echo "<a href='element.php?id=". $donnees['id'] ."'> Lien vers l'article </a>" ."<br>"; ?> </p>
+         </article>
+      <?php
+    }
+  }else{
+    header('Location:index.php');
+  } ?>
+
     </main>
-    <footer class="footer_index">
+
+    <footer>
       <p>Auto-complétion, développé par Maxime Siegl & Cécile Wojnowski</p>
     </footer>
   </body>
