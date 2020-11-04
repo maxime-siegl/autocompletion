@@ -13,10 +13,12 @@
     </header>
     <main>
 
-      <input type="text" id="philosophes" placeholder="Que recherchez-vous ?">
+      <input type="text" class="input_index" id="philosophes" placeholder="Que recherchez-vous ?">
 
     </main>
-    <footer></footer>
+    <footer>
+      <p>Auto-complétion, développé par Maxime Siegl & Cécile Wojnowski</p>
+    </footer>
   </body>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
