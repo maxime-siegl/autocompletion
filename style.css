@@ -1,0 +1,15 @@
+*{
+  margin:0;
+  padding:0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+header{
+  border-bottom: 1px solid lightgrey;
+}
+main{
+  background-image: url("img/triangles.png");
+  padding:5%;
+  text-align: center;
+}
