@@ -29,9 +29,9 @@ if(isset($_GET['search'])){
       <?php
        while ($donnees = $query->fetch()){ ?>
          <article >
-           <h2> <?php echo $donnees['nom'] . "<br>"; ?> </h2>
-           <p> <?php echo substr($donnees['description'], 0, 200) . "..." . "<br>"; ?></p>
-           <?php echo "<a href='element.php?id=". $donnees['id'] ."'> Lien vers l'article </a>" ."<br>"; ?>
+           <h2> <?php echo $donnees['nom']; ?> </h2>
+           <p> <?php echo substr($donnees['description'], 0, 200) . "... <br>" ; ?>
+           <?php echo "<a href='element.php?id=". $donnees['id'] ."'> Lien vers l'article </a>" ."<br>"; ?> </p>
          </article>
       <?php
     }

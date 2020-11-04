@@ -48,9 +48,20 @@ input:focus{
   font-size:20px;
   color: #0B1F9F;
   font-weight: bold;
+  margin-top:2%;
 }
 .main_recherche p{
-
+  width:50%;
+  text-align: justify;
+  margin-top:1%;
+  line-height: 1.5em;
+}
+.main_recherche a{
+  color: #964A80;
+  margin-top:1%;
+}
+.main_recherche a:hover{
+  text-decoration: underline;
 }
 /************* Footer *******************/
 footer{
