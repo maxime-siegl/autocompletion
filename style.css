@@ -5,12 +5,18 @@
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
 }
-header{
+body{
+  height: 100%;
+}
+main{
+  min-height: 100%;
+}
+.header_index{
   border-bottom: 2px solid black;
   padding:1%;
   text-align: center;
 }
-main{
+.main_index{
   margin-top:10%;
   background-image: url("img/triangles.png");
   padding:5%;
@@ -33,13 +39,30 @@ input:focus{
 ::placeholder{
   font-size:18px;
 }
+/************** Page recherche ***************/
+.main_recherche{
+  margin-top:5%;
+  margin-left:5%;
+}
+.main_recherche h2{
+  font-size:20px;
+  color: #0B1F9F;
+  font-weight: bold;
+}
+.main_recherche p{
+
+}
+/************* Footer *******************/
 footer{
+  margin-top:5%;
   width: 100%;
-  position: absolute;
-  bottom:0;
   background-color: #F2F2F2;
   padding:2% 0 2% 0;
 }
 footer p{
   padding-left: 5%;
+}
+.footer_index{
+  position:absolute;
+  bottom:0;
 }

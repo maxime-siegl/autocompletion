@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   </head>
   <body>
-    <header>
+    <header class="header_index">
       <h1>Biographies de philosophes</h1>
     </header>
-    <main>
+    <main class="main_index">
       <form class="form_autocomplete" action="recherche.php" method="get">
         <input type="text" name="search" class="input_index" id="philosophes" placeholder="Que recherchez-vous ?">
       </form>
     </main>
-    <footer>
+    <footer class="footer_index">
       <p>Auto-complétion, développé par Maxime Siegl & Cécile Wojnowski</p>
     </footer>
   </body>
