@@ -3,18 +3,21 @@
   padding:0;
   list-style-type: none;
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+
 }
 body{
   height: 100%;
 }
 main{
   min-height: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 .header_index{
   border-bottom: 2px solid black;
   padding:1%;
   text-align: center;
+  font-family: 'Prata', serif;
+
 }
 .main_index{
   margin-top:10%;
@@ -69,6 +72,7 @@ footer{
   width: 100%;
   background-color: #F2F2F2;
   padding:2% 0 2% 0;
+  font-family: 'Roboto', sans-serif;
 }
 footer p{
   padding-left: 5%;
