@@ -83,18 +83,18 @@ input:focus{
   text-decoration: underline;
 }
 
-/************* Page Artcile *******************/
+/************* Page Element *******************/
 #element_philosophe{
     display: flex;
     flex-direction: column;
     justify-content: left;
     margin: 4%;
     width: 75%;
-    height: 40vh;
 }
 
 #element_philosophe h2{
     font-size: 2em;
+    margin-bottom:8%;
 }
 
 #element_philosophe p{
