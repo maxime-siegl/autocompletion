@@ -5,3 +5,12 @@ $( function() {
   });
 
 } );
+
+
+$( function() {
+
+  $( "#philosophes_header" ).autocomplete({
+    source: "charge_db.php"
+  });
+
+} );
