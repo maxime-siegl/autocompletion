@@ -94,6 +94,7 @@ input:focus{
     justify-content: left;
     margin: 4%;
     width: 75%;
+    min-height:60vh;
 }
 
 #element_philosophe h2{
