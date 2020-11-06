@@ -161,6 +161,21 @@ footer p{
     margin-top: 3%;
   }
 
+  .main_index{
+    margin-top:30%;
+    background-image: url("img/triangles.png");
+    padding-top: 30%;
+    padding-bottom: 30%;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+  .input_index{
+    width: 60%;
+  }
+
   .main_recherche p{
     width: 95%;
   }
