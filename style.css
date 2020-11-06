@@ -11,6 +11,9 @@ main{
   min-height: 100%;
   font-family: 'Roboto', sans-serif;
 }
+header a{
+  color:white;
+}
 .header_index{
   background-image: url(img/triangles.png);
   position: relative;
