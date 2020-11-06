@@ -65,6 +65,7 @@ input:focus{
 .main_recherche{
   margin-top:5%;
   margin-left:5%;
+  min-height:60vh;
 }
 .main_recherche h2{
   font-size:20px;
