@@ -5,7 +5,7 @@ if(isset($_GET['search'])){
 
   $search = $_GET['search'];
 
-  $query = $db->query("SELECT * FROM philosophes WHERE nom LIKE '$search%'");
+  $query = $db->query("SELECT * FROM philosophes WHERE nom LIKE '%$search%'");
   ?>
 
 
@@ -16,15 +16,14 @@ if(isset($_GET['search'])){
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
-    <title></title>
+    <title>Résultat Recherche</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   </head>
   <body>
-    <header>
+    <?php include 'includes/header.php'; ?>
 
-    </header>
     <main class="main_recherche">
       <?php
        while ($donnees = $query->fetch()){ ?>
@@ -41,9 +40,8 @@ if(isset($_GET['search'])){
 
     </main>
 
-    <footer>
-      <p>Auto-complétion, développé par Maxime Siegl & Cécile Wojnowski</p>
-    </footer>
+    <?php include 'includes/footer.php'; ?>
+
   </body>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
